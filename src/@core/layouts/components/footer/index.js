@@ -1,8 +1,9 @@
 // ** Icons Import
-import { Heart } from 'react-feather'
+import { Heart } from "react-feather";
 
 const Footer = () => {
-  return (<></>
+  return (
+    <></>
     // <p className='clearfix mb-0'>
     //   <span className='float-md-start d-block d-md-inline-block mt-25'>
     //     COPYRIGHT © {new Date().getFullYear()}{' '}
@@ -16,7 +17,7 @@ const Footer = () => {
     //     <Heart size={14} />
     //   </span>
     // </p>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
