@@ -1,0 +1,16 @@
+<svg id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/2000/svg" width="425" height="289" viewBox="0 0 425 289">
+  <defs>
+
+    <filter id="filter" x="0" y="0" width="" height="" filterUnits="userSpaceOnUse">
+      <feImage preserveAspectRatio="none" x="0" y="0" width="253.312" height="289" result="image" xlink:href="http://www.w3.org/2000/svg"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-2" x="96.313" y="2.094" width="328.688" height="286.906" filterUnits="userSpaceOnUse">
+      <feImage preserveAspectRatio="none" x="96.3125" y="2.09375" width="328.688" height="286.906" result="image" xlink:href="http://www.w3.org/2000/svg"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <image class="cls-4" x="252" y="2" width="167" height="287" xlink:href="http://www.w3.org/2000/svg"/>
+</svg>
