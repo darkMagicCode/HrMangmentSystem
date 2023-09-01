@@ -5,9 +5,20 @@ import Router from './router/Router'
 
 const App = () => {
   useEffect(() => {
-    // Set the zoom level to 90% when the component mounts
-    document.body.style.zoom = '90%';
- 
+    // Calculate the desired zoom level (90%)
+    const desiredZoom = 0.8;
+    
+    // Calculate the current device pixel ratio
+    const currentPixelRatio = window.devicePixelRatio;
+    
+    // Calculate the required zoom to achieve the desired zoom level
+    const zoom = desiredZoom / currentPixelRatio;
+
+    // Apply the zoom to the body element
+    document.body.style.zoom = zoom.toString();
+    
+    // Cleanup by resetting the zoom when the component unmounts
+  
   }, []);
   return (
     <Suspense fallback={null}>
