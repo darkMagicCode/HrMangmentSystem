@@ -178,7 +178,7 @@ const CustomHeader = ({
               color="primary"
               onClick={toggleSidebar}
             >
-              Add New User
+              Add New Employee
             </Button>
           </div>
         </Col>

@@ -6,7 +6,7 @@ import Router from './router/Router'
 const App = () => {
   useEffect(() => {
     // Calculate the desired zoom level (90%)
-    const desiredZoom = 0.8;
+    const desiredZoom = 0.9;
     
     // Calculate the current device pixel ratio
     const currentPixelRatio = window.devicePixelRatio;

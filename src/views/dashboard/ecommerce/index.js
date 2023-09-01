@@ -67,10 +67,10 @@ const EcommerceDashboard = () => {
         </Col>
       </Row> */}
       <Row className="match-height">
-        <Col lg="8" xs="12">
+        <Col lg="9" xs="12">
           <CompanyTable />
         </Col>
-        <Col lg="4" md="6" xs="12">
+        <Col lg="3" md="5" xs="12">
           <CardMeetup />
         </Col>
         <Col lg="4" md="6" xs="12">
