@@ -1,59 +1,98 @@
 // ** Third Party Components
-import { useTranslation } from 'react-i18next'
-import ReactCountryFlag from 'react-country-flag'
+import { useTranslation } from "react-i18next";
+import ReactCountryFlag from "react-country-flag";
 
 // ** Reactstrap Imports
-import { UncontrolledDropdown, DropdownMenu, DropdownItem, DropdownToggle } from 'reactstrap'
+import {
+  UncontrolledDropdown,
+  DropdownMenu,
+  DropdownItem,
+  DropdownToggle,
+} from "reactstrap";
+import { useRTL } from "../../../../utility/hooks/useRTL";
+import { handleRTL } from "@store/layout";
+import { useDispatch } from "react-redux";
 
 const IntlDropdown = () => {
   // ** Hooks
-  const { i18n } = useTranslation()
+  const { i18n } = useTranslation();
 
   // ** Vars
   const langObj = {
-    en: 'English',
-    de: 'German',
-    fr: 'French',
-    sa: 'Arabic'
-  }
+    en: "English",
+    de: "German",
+    fr: "French",
+    sa: "Arabic",
+  };
+  const dispatch = useDispatch();
 
   // ** Function to switch Language
   const handleLangUpdate = (e, lang) => {
-    e.preventDefault()
-    useRTL()
-    i18n.changeLanguage(lang)
-  }
+    e.preventDefault();
+    if (lang == "sa") {
+      dispatch(handleRTL(true));
+      i18n.changeLanguage(lang);
+    } else {
+      dispatch(handleRTL(false));
+      i18n.changeLanguage(lang);
+    }
+  };
 
   return (
-    <UncontrolledDropdown href='/' tag='li' className='dropdown-language nav-item'>
-      <DropdownToggle href='/' tag='a' className='nav-link' onClick={e => e.preventDefault()}>
+    <UncontrolledDropdown
+      href="/"
+      tag="li"
+      className="dropdown-language nav-item"
+    >
+      <DropdownToggle
+        href="/"
+        tag="a"
+        className="nav-link"
+        onClick={(e) => e.preventDefault()}
+      >
         <ReactCountryFlag
           svg
-          className='country-flag flag-icon'
-          countryCode={i18n.language === 'en' ? 'us' : i18n.language}
+          className="country-flag flag-icon"
+          countryCode={i18n.language === "en" ? "us" : i18n.language}
         />
-        <span className='selected-language'>{langObj[i18n.language]}</span>
+        <span className="selected-language">{langObj[i18n.language]}</span>
       </DropdownToggle>
-      <DropdownMenu className='mt-0' end>
-        <DropdownItem href='/' tag='a' onClick={e => handleLangUpdate(e, 'en')}>
-          <ReactCountryFlag className='country-flag' countryCode='us' svg />
-          <span className='ms-1'>English</span>
+      <DropdownMenu className="mt-0" end>
+        <DropdownItem
+          href="/"
+          tag="a"
+          onClick={(e) => handleLangUpdate(e, "en")}
+        >
+          <ReactCountryFlag className="country-flag" countryCode="us" svg />
+          <span className="ms-1">English</span>
         </DropdownItem>
-        <DropdownItem href='/' tag='a' onClick={e => handleLangUpdate(e, 'fr')}>
-          <ReactCountryFlag className='country-flag' countryCode='fr' svg />
-          <span className='ms-1'>French</span>
+        <DropdownItem
+          href="/"
+          tag="a"
+          onClick={(e) => handleLangUpdate(e, "fr")}
+        >
+          <ReactCountryFlag className="country-flag" countryCode="fr" svg />
+          <span className="ms-1">French</span>
         </DropdownItem>
-        <DropdownItem href='/' tag='a' onClick={e => handleLangUpdate(e, 'de')}>
-          <ReactCountryFlag className='country-flag' countryCode='de' svg />
-          <span className='ms-1'>German</span>
+        <DropdownItem
+          href="/"
+          tag="a"
+          onClick={(e) => handleLangUpdate(e, "de")}
+        >
+          <ReactCountryFlag className="country-flag" countryCode="de" svg />
+          <span className="ms-1">German</span>
         </DropdownItem>
-        <DropdownItem href='/' tag='a' onClick={e => handleLangUpdate(e, 'sa')}>
-          <ReactCountryFlag className='country-flag' countryCode='SA' svg />
-          <span className='ms-1'>Arabic</span>
+        <DropdownItem
+          href="/"
+          tag="a"
+          onClick={(e) => handleLangUpdate(e, "sa")}
+        >
+          <ReactCountryFlag className="country-flag" countryCode="SA" svg />
+          <span className="ms-1">Arabic</span>
         </DropdownItem>
       </DropdownMenu>
     </UncontrolledDropdown>
-  )
-}
+  );
+};
 
-export default IntlDropdown
+export default IntlDropdown;
