@@ -40,6 +40,7 @@ import {
 // ** Styles
 import '@styles/react/libs/react-select/_react-select.scss'
 import '@styles/react/libs/tables/react-dataTable-component.scss'
+import { useNavigate } from 'react-router-dom'
 
 // ** Table Header
 const CustomHeader = ({ store, toggleSidebar, handlePerPage, rowsPerPage, handleFilter, searchTerm }) => {
@@ -168,7 +169,7 @@ const UsersList = () => {
   // ** Store Vars
   const dispatch = useDispatch()
   const store = useSelector(state => state.users)
-
+let navigate = useNavigate()
   // ** States
   const [sort, setSort] = useState('desc')
   const [searchTerm, setSearchTerm] = useState('')
@@ -432,6 +433,12 @@ const UsersList = () => {
       <Card className='overflow-hidden'>
         <div className='react-dataTable'>
           <DataTable
+          onRowClicked={row => {
+            navigate(`/apps/user/view/${row.id}`)
+            // window.location.href = `/apps/user/view/${row.id}`
+
+            console.log(row)
+          }}
             noHeader
             subHeader
             sortServer

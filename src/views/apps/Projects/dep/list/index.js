@@ -13,12 +13,17 @@ import { User, UserPlus, UserCheck, UserX } from 'react-feather'
 // ** Styles
 import '@styles/react/apps/app-users.scss'
 import CardAppDesign from '../../../../ui-elements/cards/advance/CardAppDesign'
+import { useNavigate } from 'react-router-dom'
 
 const ProjectsList = () => {
+  let navigate = useNavigate()
   return (
     <div className='app-user-list'>
       <Row>
-      <Col lg='4' md='6'>
+      <Col lg='4' md='6' onClick={() => {
+        navigate('/apps/user/view/50')
+          // window.location.href = '/apps/user/view/50'
+        }}>
           <CardAppDesign />
         </Col>
       </Row>
