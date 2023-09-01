@@ -4,7 +4,7 @@ import Chart from 'react-apexcharts'
 // ** Reactstrap Imports
 import { Card, CardHeader, CardTitle, CardBody, CardSubtitle } from 'reactstrap'
 
-const ApexRadiarChart = () => {
+const ApexRadiarChart = (props) => {
   const donutColors = {
     series1: '#ffe700',
     series2: '#00d4bd',
@@ -19,7 +19,7 @@ const ApexRadiarChart = () => {
       show: true,
       position: 'bottom'
     },
-    labels: ['Operational', 'Networking', 'Hiring', 'R&D'],
+    labels: ['Dot Food System', 'Dot Hr system', 'Resturants', 'Cafes'],
 
     colors: [donutColors.series1, donutColors.series5, donutColors.series3, donutColors.series2],
     dataLabels: {
@@ -47,9 +47,9 @@ const ApexRadiarChart = () => {
             total: {
               show: true,
               fontSize: '1.5rem',
-              label: 'Operational',
+              label: ' Food System',
               formatter() {
-                return '31%'
+                return '45%'
               }
             }
           }
@@ -98,16 +98,16 @@ const ApexRadiarChart = () => {
   }
 
   // ** Chart Series
-  const series = [85, 16, 50, 50]
+  const series = [45, 16, 50, 50]
 
   return (
     <Card>
       <CardHeader>
         <div>
           <CardTitle className='mb-75' tag='h4'>
-            Expense Ratio
+            {props?.title}
           </CardTitle>
-          <CardSubtitle className='text-muted'>Spending on various categories</CardSubtitle>
+          <CardSubtitle className='text-muted'>Emplyoee Count Per Project</CardSubtitle>
         </div>
       </CardHeader>
       <CardBody>

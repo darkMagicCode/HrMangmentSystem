@@ -22,48 +22,48 @@ const CompanyTable = () => {
   const data = [
     {
       img: toolboxIcon,
-      name: 'Dixons',
+      name: 'Food system',
       email: 'meguc@ruj.io',
       icon: <Monitor size={18} />,
       category: 'Technology',
       views: '23.4k',
       time: '24 hours',
-      revenue: '891.2',
+      revenue: '700',
       sales: '68'
     },
     {
       img: parachuteIcon,
-      name: 'Motels',
+      name: 'HR system',
       email: 'vecav@hodzi.co.uk',
       icon: <Coffee size={18} />,
       category: 'Grocery',
       views: '78k',
       time: '2 days',
-      revenue: '668.51',
+      revenue: '700',
       sales: '97',
       salesUp: true
     },
     {
       img: brushIcon,
-      name: 'Zipcar',
+      name: 'la7ma fa7ma',
       email: 'davcilse@is.gov',
       icon: <Watch size={18} />,
       category: 'Fashion',
       views: '162',
       time: '5 days',
-      revenue: '522.29',
+      revenue: '700',
       sales: '62',
       salesUp: true
     },
     {
       img: starIcon,
-      name: 'Owning',
+      name: 'prego',
       email: 'us@cuhil.gov',
       icon: <Monitor size={18} />,
       category: 'Technology',
       views: '214',
       time: '24 hour',
-      revenue: '291.01',
+      revenue: '700',
       sales: '88',
       salesUp: true
     },
@@ -75,7 +75,7 @@ const CompanyTable = () => {
       category: 'Grocery',
       views: '208',
       time: '1 week',
-      revenue: '783.93',
+      revenue: '700',
       sales: '16'
     },
     {
@@ -86,7 +86,7 @@ const CompanyTable = () => {
       category: 'Fashion',
       views: '990',
       time: '1 month',
-      revenue: '780.05',
+      revenue: '700',
       sales: '78',
       salesUp: true
     },
@@ -98,7 +98,7 @@ const CompanyTable = () => {
       category: 'Fashion',
       views: '12.9k',
       time: '12 hours',
-      revenue: '531.49',
+      revenue: '700',
       sales: '42',
       salesUp: true
     }
@@ -144,7 +144,7 @@ const CompanyTable = () => {
               <span className='font-small-2 text-muted'>in {col.time}</span>
             </div>
           </td>
-          <td>${col.revenue}</td>
+          <td>{col.revenue}</td>
           <td>
             <div className='d-flex align-items-center'>
               <span className='fw-bolder me-1'>{col.sales}%</span>
@@ -161,11 +161,11 @@ const CompanyTable = () => {
       <Table responsive>
         <thead>
           <tr>
-            <th>Company</th>
+            <th>Project</th>
             <th>Category</th>
-            <th>Views</th>
-            <th>Revenue</th>
-            <th>Sales</th>
+            <th>Spend</th>
+            <th>Employess</th>
+            <th>peogress</th>
           </tr>
         </thead>
         <tbody>{renderData()}</tbody>

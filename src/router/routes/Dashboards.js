@@ -9,7 +9,7 @@ const DashboardRoutes = [
     element: <DashboardAnalytics />
   },
   {
-    path: '/dashboard/ecommerce',
+    path: '/dashboard/Dot',
     element: <DashboardEcommerce />
   }
 ]

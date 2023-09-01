@@ -19,7 +19,7 @@ export default [
         id: 'eCommerceDash',
         title: 'Analytics',
         icon: <Circle size={12} />,
-        navLink: '/dashboard/ecommerce'
+        navLink: '/dashboard/Dot'
       }
     ]
   }
