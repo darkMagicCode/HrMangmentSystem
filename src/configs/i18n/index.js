@@ -8,13 +8,13 @@ import LanguageDetector from 'i18next-browser-languagedetector'
 const en = new URL('../../assets/data/locales/en.json', import.meta.url).href
 const fr = new URL('../../assets/data/locales/fr.json', import.meta.url).href
 const de = new URL('../../assets/data/locales/de.json', import.meta.url).href
-const pt = new URL('../../assets/data/locales/pt.json', import.meta.url).href
+const sa = new URL('../../assets/data/locales/pt.json', import.meta.url).href
 
 const languages = {
   en,
   fr,
   de,
-  pt
+  sa
 }
 
 i18n

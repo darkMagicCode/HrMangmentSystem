@@ -71,11 +71,11 @@ const I18nExtension = () => {
                     type='radio'
                     id='radio-pt'
                     name='i18n-lang-radio'
-                    onChange={() => i18n.changeLanguage('pt')}
-                    checked={i18n.language === 'pt'}
+                    onChange={() => i18n.changeLanguage('Ar')}
+                    checked={i18n.language === 'Ar'}
                   />
                   <Label className='form-check-label' for='radio-pt'>
-                    Portuguese
+                    Arabic
                   </Label>
                 </div>
               </div>
