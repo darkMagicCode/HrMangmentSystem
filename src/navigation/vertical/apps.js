@@ -9,6 +9,9 @@ import {
   ShoppingCart,
   User,
   Shield,
+  BarChart,
+  BarChart2,
+  Home,
 } from "react-feather";
 
 export default [
@@ -95,7 +98,7 @@ export default [
   {
     id: "userss",
     title: "Departments",
-    icon: <User size={20} />,
+    icon: <Home size={20} />,
     children: [
       {
         id: "lisst",
@@ -114,7 +117,7 @@ export default [
   {
     id: "usersss",
     title: "Projects",
-    icon: <User size={20} />,
+    icon: <BarChart2 size={20} />,
     children: [
       {
         id: "lissst",
