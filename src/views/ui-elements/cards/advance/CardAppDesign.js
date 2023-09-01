@@ -79,7 +79,11 @@ const CardAppDesign = () => {
       <CardBody>
         <div className="profile-image-wrapper">
           <div className="profile-image">
-            <Avatar img={'https://www.freepnglogos.com/uploads/dot-png/dot-background-image-design-joy-studio-design-gallery-best-28.png'} />
+            <Avatar
+              img={
+                "https://www.freepnglogos.com/uploads/dot-png/dot-background-image-design-joy-studio-design-gallery-best-28.png"
+              }
+            />
           </div>
         </div>
         <h3>Resturant managment</h3>
@@ -97,7 +101,7 @@ const CardAppDesign = () => {
           Food managment system
         </CardTitle> */}
 
-    <div className=" text-start">
+        <div className=" text-start">
           <div className="design-group mb-2 pt-50">
             <h6 className="section-label mb-1">Teams</h6>
             <Badge className="me-1 px-1" color="light-warning">
@@ -105,7 +109,7 @@ const CardAppDesign = () => {
             </Badge>
             <Badge color="light-primary px-1">Backend</Badge>
           </div>
-      
+
           <div className="design-group pt-25">
             <h6 className="section-label mb-1">Members</h6>
             {avatarArr.map((obj, index) => {
@@ -120,13 +124,13 @@ const CardAppDesign = () => {
               );
             })}
           </div>
-    </div>
+        </div>
         <div className="demo-vertical-spacing my-1">
           <div className="d-flex justify-content-between">
             <span> Tasks: 100/200 </span>
             <span> 50% Completed</span>
           </div>
-            <Progress value={50} />
+          <Progress value={50} />
         </div>
         <div className="design-planning-wrapper mb-2 py-75">
           {designPlanningArr.map((item) => (

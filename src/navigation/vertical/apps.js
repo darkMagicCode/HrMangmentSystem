@@ -1,9 +1,19 @@
 // ** Icons Import
-import { Mail, MessageSquare, CheckSquare, Calendar, FileText, Circle, ShoppingCart, User, Shield } from 'react-feather'
+import {
+  Mail,
+  MessageSquare,
+  CheckSquare,
+  Calendar,
+  FileText,
+  Circle,
+  ShoppingCart,
+  User,
+  Shield,
+} from "react-feather";
 
 export default [
   {
-    header: 'Apps & Pages'
+    header: "Apps & Pages",
   },
 
   // {
@@ -12,8 +22,6 @@ export default [
   //   icon: <CheckSquare size={20} />,
   //   navLink: '/apps/todo'
   // },
-
-
 
   // {
   //   id: 'roles-permissions',
@@ -66,15 +74,15 @@ export default [
   //   ]
   // },
   {
-    id: 'users',
-    title: 'Employees',
+    id: "users",
+    title: "Employees",
     icon: <User size={20} />,
     children: [
       {
-        id: 'list',
-        title: 'Employees List',
+        id: "list",
+        title: "Employees List",
         icon: <Circle size={12} />,
-        navLink: '/apps/user/list'
+        navLink: "/apps/user/list",
       },
       // {
       //   id: 'view',
@@ -82,18 +90,18 @@ export default [
       //   icon: <Circle size={12} />,
       //   navLink: '/apps/user/view'
       // }
-    ]
+    ],
   },
   {
-    id: 'userss',
-    title: 'Departments',
+    id: "userss",
+    title: "Departments",
     icon: <User size={20} />,
     children: [
       {
-        id: 'lisst',
-        title: 'Departments List',
+        id: "lisst",
+        title: "Departments List",
         icon: <Circle size={12} />,
-        navLink: '/apps/dep/list'
+        navLink: "/apps/dep/list",
       },
       // {
       //   id: 'view',
@@ -101,18 +109,18 @@ export default [
       //   icon: <Circle size={12} />,
       //   navLink: '/apps/user/view'
       // }
-    ]
+    ],
   },
   {
-    id: 'usersss',
-    title: 'Projects',
+    id: "usersss",
+    title: "Projects",
     icon: <User size={20} />,
     children: [
       {
-        id: 'lissst',
-        title: 'Projects List',
+        id: "lissst",
+        title: "Projects List",
         icon: <Circle size={12} />,
-        navLink: '/apps/Projects/list'
+        navLink: "/apps/Projects/list",
       },
       // {
       //   id: 'view',
@@ -120,18 +128,18 @@ export default [
       //   icon: <Circle size={12} />,
       //   navLink: '/apps/user/view'
       // }
-    ]
+    ],
   },
   {
-    id: 'invoiceApp',
-    title: 'Invoice',
+    id: "invoiceApp",
+    title: "Invoice",
     icon: <FileText size={20} />,
     children: [
       {
-        id: 'invoiceList',
-        title: 'Invoice List',
+        id: "invoiceList",
+        title: "Invoice List",
         icon: <Circle size={12} />,
-        navLink: '/apps/invoice/list'
+        navLink: "/apps/invoice/list",
       },
       // {
       //   id: 'invoicePreview',
@@ -151,30 +159,30 @@ export default [
       //   icon: <Circle size={12} />,
       //   navLink: '/apps/invoice/add'
       // }
-    ]
+    ],
   },
   {
-    id: 'email',
-    title: 'Email',
+    id: "email",
+    title: "Email",
     icon: <Mail size={20} />,
-    navLink: '/apps/email'
+    navLink: "/apps/email",
   },
   {
-    id: 'chat',
-    title: 'Chat',
+    id: "chat",
+    title: "Chat",
     icon: <MessageSquare size={20} />,
-    navLink: '/apps/chat'
+    navLink: "/apps/chat",
   },
   {
-    id: 'calendar',
-    title: 'Calendar',
+    id: "calendar",
+    title: "Calendar",
     icon: <Calendar size={20} />,
-    navLink: '/apps/calendar'
+    navLink: "/apps/calendar",
   },
   {
-    id: 'kanban',
-    title: 'To Do',
+    id: "kanban",
+    title: "To Do",
     icon: <CheckSquare size={20} />,
-    navLink: '/apps/kanban'
+    navLink: "/apps/kanban",
   },
-]
+];

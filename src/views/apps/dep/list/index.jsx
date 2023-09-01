@@ -16,7 +16,7 @@ import CardMeetup from "../../../ui-elements/cards/advance/CardMeetup";
 import { useNavigate } from "react-router-dom";
 
 const DepList = () => {
-  let navigate = useNavigate()
+  let navigate = useNavigate();
 
   return (
     <div className="app-user-list">
@@ -26,16 +26,19 @@ const DepList = () => {
           md="6"
           sm="12"
           onClick={() => {
-
-            navigate('/apps/user/view/50')
-              }}
+            navigate("/apps/user/view/50");
+          }}
         >
           <CardMeetup />
-        </Col >{" "}
-        <Col lg="4" md="6" sm="12" onClick={() => {
-
-  navigate('/apps/user/view/50')
-  }}>
+        </Col>{" "}
+        <Col
+          lg="4"
+          md="6"
+          sm="12"
+          onClick={() => {
+            navigate("/apps/user/view/50");
+          }}
+        >
           <CardMeetup />
         </Col>
       </Row>
