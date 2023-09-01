@@ -242,37 +242,37 @@ export default [
           {
             id: 'welcomeTemp',
             title: 'Welcome',
-            navLink: 'https://pixinvent.com/demo/vuexy-mail-template/mail-welcome.html',
+            navLink: '',
             externalLink: true
           },
           {
             id: 'resetPassTemp',
             title: 'Reset Password',
-            navLink: 'https://pixinvent.com/demo/vuexy-mail-template/mail-reset-password.html',
+            navLink: '',
             externalLink: true
           },
           {
             id: 'verifyEmailTemp',
             title: 'Verify Email',
-            navLink: 'https://pixinvent.com/demo/vuexy-mail-template/mail-verify-email.html',
+            navLink: 'h',
             externalLink: true
           },
           {
             id: 'deactivateAccountTemp',
             title: 'Deactivate Account',
-            navLink: 'https://pixinvent.com/demo/vuexy-mail-template/mail-deactivate-account.html',
+            navLink: '',
             externalLink: true
           },
           {
             id: 'invoiceMailTemp',
             title: 'Invoice',
-            navLink: 'https://pixinvent.com/demo/vuexy-mail-template/mail-invoice.html',
+            navLink: '',
             externalLink: true
           },
           {
             id: 'promotionalMailTemp',
             title: 'Promotional',
-            navLink: 'https://pixinvent.com/demo/vuexy-mail-template/mail-promotional.html',
+            navLink: '',
             externalLink: true
           }
         ]

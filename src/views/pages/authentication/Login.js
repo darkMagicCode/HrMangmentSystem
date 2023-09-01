@@ -71,7 +71,7 @@ const ToastContent = ({ t, name, role }) => {
           />
         </div>
         <span>
-          You have successfully logged in as an {role} user to Vuexy. Now you
+          You have successfully logged in as an {role} user to Dot. Now you
           can start to explore. Enjoy!
         </span>
       </div>
