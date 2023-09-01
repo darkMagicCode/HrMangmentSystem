@@ -21,7 +21,7 @@ const ProjectsList = () => {
     <div className="app-user-list">
       <Row>
         <Col
-          lg="4"
+          lg="5"
           md="6"
           onClick={() => {
             navigate("/apps/user/view/50");
